@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="EUC-KR">
+<head>
+    <meta charset="EUC-KR">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>세탁배달요기요</title>
+
+    <!-- icon -->
+    <link rel="Logo" sizes="144x144" href="assets/ico/Logo.png">
+    <link rel="shortcut icon" href="assets/ico/smallLogo.png">
+
+    <!-- CSS Global -->
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/plugins/owl-carousel2/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/plugins/animate/animate.min.css" rel="stylesheet">
+
+    <link href="assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="assets/plugins/countdown/jquery.countdown.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/theme-blue-1.css" rel="stylesheet" id="theme-config-link">
+
+    <!-- Head Libs -->
+    <script src="assets/plugins/modernizr.custom.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="assets/plugins/iesupport/html5shiv.js"></script>
+    <script src="assets/plugins/iesupport/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="home" class="wide">
+<!-- PRELOADER -->
+<div id="preloader">
+    <div id="preloader-status">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+        <div id="preloader-title">Loading</div>
+    </div>
+</div>
+<!-- /PRELOADER -->
+
+
+
+    <!-- Header top bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <ul class="list-inline">
+                    <li class="icon-user"><a href="login.html"><img src="assets/img/icon-1.png" alt=""/> <span>Login</span></a></li>
+                    <li class="icon-form"><a href="login.html"><img src="assets/img/icon-2.png" alt=""/> <span>Not a Member? <span class="colored">Sign Up</span></span></a></li>
+                  
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul class="list-inline">
+                    <li class="hidden-xs"><a href="about.html">About</a></li>
+                    <li class="hidden-xs"><a href="blog.html">Blog</a></li>
+                    <li class="hidden-xs"><a href="contact.html">Contact</a></li>
+                    <li class="hidden-xs"><a href="faq.html">FAQ</a></li>
+                    <li class="hidden-xs"><a href="wishlist.html">My Wishlist</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /Header top bar -->
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="container">
+
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="assets/ico/Logoset.png"  alt="세탁배달요기요"/></a>
+                </div>
+                <!-- /Logo -->
+
+                <!-- Header search -->
+                <div class="header-search">
+                    <input class="form-control" type="text" placeholder="What are you looking?"/>
+                    <button><i class="fa fa-search"></i></button>
+                </div>
+                <!-- /Header search -->
+
+
+            </div>
+        </div>
+        <div class="navigation-wrapper">
+           <!--  원하면 이부분에 상단메뉴를 넣는곳 -->
+        </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- CONTENT AREA -->
+    <div class="content-area">
+
+        <!-- 헤더부분 -->
+        <section class="page-section breadcrumbs">
+            <div class="container">
+                <div class="page-header">
+                    <h1>세탁소 선택</h1>
+                </div>
+                <ul class="breadcrumb">
+                    <li><a href="#">전주시</a></li>
+                    <li><a href="#">덕진동 1가</a></li>
+                    <li class="active">세탁소 찾기</li>
+                </ul>
+            </div>
+        </section>
+        <!-- /헤더부분 -->
+
+        <!-- 중앙 (가게목록) -->
+        <section class="page-section with-sidebar">
+            <div class="container">
+                <div class="row">
+                    <!-- CONTENT -->
+                    <div class="col-md-9 content" id="content">
+
+
+                        <!-- 보기순서정렬 -->
+                        <div class="shop-sorting">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <form class="form-inline" action="">
+                                        <div class="form-group selectpicker-wrapper">
+                                            <select
+                                                    class="selectpicker input-price" data-width="100%"
+                                                    data-toggle="tooltip" title="Select">  <!--  data-live-search="true" -->
+                                                <option>인기순서</option>
+                                                <option>평점순서</option>
+                                                <option>등록순서</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group selectpicker-wrapper">
+                                            
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-4 text-right-sm">
+                                    <a class="btn btn-theme btn-theme-transparent btn-theme-sm" href="#"><img src="assets/img/icon-list.png" alt=""/></a>
+                                    <a class="btn btn-theme btn-theme-transparent btn-theme-sm" href="#"><img src="assets/img/icon-grid.png" alt=""/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /보기순서정렬 -->
+
+                        <!-- 가게정렬 -->
+                        <div class="row products grid">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-1c.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">춘자세탁소</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                        <div class="operationtime"><ins>주중/주말 휴무</ins> <div>덕진동1가 25-7</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-2c.jpg" alt=""/>
+                                   
+                                        </a>
+                                    </div>
+                                    <!-- ===================================================1 -->
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">봉구네 세탁소</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                         <div class="operationtime"><ins>주중/주말 운영</ins> <div>서신동1가 58</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-3c.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">슬기네 세탁소</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                          <div class="operationtime"><ins>주중/주말 운영</ins> <div>효자동1가 상산고 앞</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-4c.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">초봉이네 세탁소</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                        <div class="operationtime"><ins>주중/주말 운영</ins> <div>효자동1가 상산고 앞</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-5c.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">미스터권 클리닝</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                        <div class="operationtime"><ins>주중/주말 휴무</ins> <div>사대부고 사거리 도미노피자앞</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-6c.jpg" alt=""/>
+                                    
+                                        </a>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">코앞 세탁소</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                        <div class="operationtime"><ins>주중/주말 운영</ins> <div>전북대학교앞 코앞헬스</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                             <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-6c.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">장미 세탁소</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                        <div class="operationtime"><ins>주중/주말 운영</ins> <div>장미대로앞 다이소2층</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-9c.jpg" alt=""/>
+                                        </a>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">나나 세탁소</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                        <div class="operationtime"><ins>주중/주말운영</ins> <div>백제대로앞 사거리</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="thumbnail no-border no-padding">
+                                    <div class="media">
+                                        <a class="media-link" href="#">
+                                            <img src="assets/img/preview/shop/product-10c.jpg" alt=""/>
+                               
+                                        </a>
+                                    </div>
+                                    <div class="caption text-center">
+                                        <h4 class="caption-title">전북 세탁소</h4>
+                                        <div class="rating">
+                                            <span class="star"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span><!--
+                                        --><span class="star active"></span>
+                                        </div>
+                                        <div class="operationtime"><ins>주중/주말운영</ins> <div>사대부고 대학약국2층</div></div>
+                                        <div class="buttons">
+                                            <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
+                                    --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>장바구니에 넣기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                           
+                        <!-- /세탁소 메뉴 -->
+
+                        <!-- 다음페이지로 -->
+                        <div class="pagination-wrapper">
+                            <ul class="pagination">
+                                <li class=""><a href="#"><i class="fa fa-angle-double-left"></i> Previous</a></li>	<!-- class="disabled" 선택못하도록상태변경 -->
+                                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">Next <i class="fa fa-angle-double-right"></i></a></li>
+                            </ul>
+                        </div>
+                        <!-- /다음페이지로 -->
+
+                    </div>
+                  
+                    <aside class="col-md-3 sidebar" id="sidebar">
+                        
+                        <!-- w -->
+                      
+                       
+
+                </div>
+            </div>
+        </section>
+        <!-- /세탁소메뉴 -->
+
+        <!-- 추가이벤트 -->
+        <section class="page-section no-padding-top">
+            <div class="container">
+                <div class="row blocks shop-info-banners">
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="media">
+                                <div class="pull-right"><i class="fa fa-gift"></i></div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">글</h4>
+                                    		글
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="media">
+                                <div class="pull-right"><i class="fa fa-comments"></i></div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">글</h4>
+                                    	글
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block">
+                            <div class="media">
+                                <div class="pull-right"><i class="fa fa-trophy"></i></div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">글</h4>
+                                   		 글	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /추가이벤트 -->
+
+    </div>
+    <!-- /아래부분 -->
+
+   
+
+    <div id="to-top" class="to-top"><i class="fa fa-angle-up"></i></div>
+
+</div>
+<!-- /WRAPPER -->
+<!-- new CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- additional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- javaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- JS  -->
+<script src="assets/plugins/jquery/jquery-1.11.1.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="assets/plugins/jquery.sticky.min.js"></script>
+<script src="assets/plugins/jquery.easing.min.js"></script>
+<script src="assets/plugins/jquery.smoothscroll.min.js"></script>
+<script src="assets/plugins/smooth-scrollbar.min.js"></script>
+
+<!-- JS Page -->
+<script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="assets/js/theme.js"></script>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="assets/plugins/jquery.cookie.js"></script>
+<script src="assets/js/theme-config.js"></script>
+<!--<![endif]-->
+
+</body>
+</html>
